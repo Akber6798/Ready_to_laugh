@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:ready_to_laugh/controller/joke_controller.dart';
-import 'package:ready_to_laugh/screens/home_screen.dart';
+import 'package:ready_to_laugh/screens/splash_screen.dart';
 
 void main() {
   runApp(
@@ -27,9 +27,9 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, index) {
-        return  MaterialApp(
+        return  const MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: HomeScreen(),
+          home: SplashScreen(),
         );
       },
     );

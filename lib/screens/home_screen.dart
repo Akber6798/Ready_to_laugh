@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
   var data = ApiServices().getJokes();
   @override
   Widget build(BuildContext context) {
-    var jokeProvider = Provider.of<JokeController>(context, listen: false);
+    var jokeProvider = Provider.of<JokeController>(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.scaffoldColor,
